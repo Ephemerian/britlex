@@ -1,0 +1,516 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+:root {
+  --main-bg-color: #e5e5e5;
+  --btn-text-color: #ffffff;
+  --btn-fill-color: #263238;
+  --logo-main-color: #000000;
+  --logo-tail-color: #939393;
+  --main-text-color: #8f95a5;
+  --secondary-text-color: #000000;
+  --stats-digits-color: #2a3246;
+  --price-value-color: #263238;
+  --price-term-color: #546269;
+  --price-bg-color: #eeeeee;
+  --skill-card-color: #f5f5f5;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.top-line {
+  width: 100%;
+}
+
+.top-wrapper {
+  max-width: 1338px;
+  margin: 0 auto;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  /* margin-top: 64px; */
+  font-size: 36px;
+  line-height: 54px;
+  color: var(--logo-main-color);
+}
+
+.logo-text span {
+  color: var(--logo-tail-color);
+}
+
+.top-nav {
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--btn-fill-color);
+}
+
+.talk2me {
+  font-size: 20px;
+  color: var(--btn-fill-color);
+  background-color: var(--btn-text-color);
+  letter-spacing: 0.03em;
+  padding: 20px 104px;
+
+  border: 2px solid var(--btn-fill-color);
+  border-radius: 10px;
+}
+
+.top-dome {
+}
+
+.hero-page {
+  max-width: 1338px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 180px;
+}
+
+.hero-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+  color: var(--secondary-text-color);
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  font-size: 24px;
+  margin-bottom: 68px;
+}
+
+.hero-starter {
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: var(--btn-text-color);
+  background-color: var(--btn-fill-color);
+  padding: 24px 106px;
+  border-radius: 10px;
+}
+
+.hero-img {
+}
+
+.skill-tall {
+  height: 947px;
+}
+
+.skill-mid {
+  height: 579px;
+}
+
+.skill-low {
+  height: 338px;
+}
+
+.skills {
+  width: 1338px;
+  margin: 0 auto;
+}
+
+.order-one {
+  order: 1;
+  margin-left: -456px;
+}
+
+.order-two {
+  order: 2;
+}
+
+.order-three {
+  order: 3;
+}
+
+.order-four {
+  order: 4;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--secondary-text-color);
+}
+
+.skill-card-vert {
+  max-width: 426px;
+  padding: 32px 18px 32px;
+  background: var(--skill-card-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.skill-card-hor {
+  width: 882px;
+  padding: 32px 18px 32px;
+  background: var(--skill-card-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills-list {
+  height: 947px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 180px;
+}
+
+.skill-info {
+}
+
+.skill-img {
+  margin-bottom: 24px;
+}
+
+.skill-title {
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--btn-fill-color);
+  margin-bottom: 20px;
+}
+
+.skill-text {
+  margin-bottom: 30px;
+  width: 324px;
+}
+
+.skill-img-h {
+  align-self: flex-end;
+  margin-left: 100px;
+}
+
+.skill-title-h {
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--btn-fill-color);
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+.skill-text-h {
+  width: 324px;
+  margin-bottom: 32px;
+}
+
+.skill-more {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 16px 52px;
+  color: var(--btn-text-color);
+  background-color: var(--btn-fill-color);
+  border-radius: 10px;
+}
+
+.about {
+  width: 1338px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 180px;
+}
+
+.about h2 {
+  margin-bottom: 60px;
+}
+
+.about-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text {
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+
+.about-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-item {
+  width: 30%;
+  text-align: center;
+}
+
+.stat-value {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--stats-digits-color);
+}
+
+.stat-units {
+  font-size: 20px;
+  color: var(--main-text-color);
+}
+
+.about-img {
+}
+
+.pricing {
+  width: 1338px;
+  margin: 0 auto;
+}
+
+.pricing h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.price-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 180px;
+}
+
+.price-item {
+  width: 426px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-pic {
+  margin-bottom: 32px;
+}
+
+.price-title {
+  font-size: 30px;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: var(--price-value-color);
+  margin-bottom: 20px;
+}
+
+.price-text {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+.price-tag {
+  width: 260px;
+  height: 45px;
+  left: 131px;
+  background: var(--price-bg-color);
+  border-radius: 5px;
+  padding: 4px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-value {
+  font-size: 24px;
+  color: var(--price-value-color);
+}
+
+.price-terms {
+  font-size: 18px;
+  line-height: 27px;
+  columns: var(--price-term-color);
+}
+
+.contacts {
+  width: 1338px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.contacts h2 {
+  margin-bottom: 60px;
+}
+
+.contacts-right {
+  margin-left: 144px;
+}
+
+.contacts-img {
+}
+
+.contacts-text {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+.contacts-email {
+  width: 425px;
+  height: 70px;
+  padding: 20px 30px;
+  border: 1px solid var(--main-text-color);
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--main-text-color);
+  margin-right: 24px;
+}
+
+.contacts-send {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 20px 106px;
+  color: var(--btn-text-color);
+  background-color: var(--btn-fill-color);
+  border-radius: 10px;
+}
+
+.footer {
+  width: 1338px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  column-gap: 80px;
+}
+
+.footer-link {
+}
+
+.footer-item {
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
